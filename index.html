@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/input.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card w-[90%] max-w-[470px] mt-[10%] m-auto py-10 px-9 rounded-2xl text-center bg-gradient-to-r from-cyan-500 to-purple-500">
+        <div class="search w-full flex items-center justify-between">
+            <input class="border-none  px-3 py-6 h-14 flex-1 rounded-3xl mr-4 " type="text"
+                placeholder="Enter city name">
+            <button class="btn border-none outline-none w-14 h-14">
+                <img class="w-12" src="assets/search.png" alt="no image">
+            </button>
+        </div>
+        <div class="weather hidden">
+            <img class="weather-icon w-44 my-8" src="assets/rain.png" alt="no image">
+            <h1 class="temp text-4xl font-bold">22°C</h1>
+            <h2 class="city text-xl font-semibold">New York</h2>
+            <div>
+                <div class="details ">
+                    <div class="col">
+                        <img  class="w-20 my-4" src="assets/humidity.png" alt="">
+                        <div>
+                            <p class="humidity font-bold">50%</p>
+                            <p class="font-semibold">humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="w-20 my-4" src="assets/wind.png" alt="">
+                        <div>
+                            <p class="wind font-bold">15 km/h</p>
+                            <p class="font-semibold">wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
